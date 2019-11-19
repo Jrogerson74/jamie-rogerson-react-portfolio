@@ -54,4 +54,3 @@ export default class BlogDetail extends Component {
     );
   }
 }
-© 2019 GitHub, 
