@@ -21,20 +21,20 @@ class Blog extends Component {
   }
 
   onScroll() {
-      if (
-        this.state.isLoading ||
-        this.state.blogItems.length === this.state.totalCount
-      ) {
-        return;
-      }
-
-      if (
-        window.innerHeight + document.documentElement.scrollTop ===
-        document.documentElement.offsetHeight
-      ) {
-        this.getBlogItems();
-      }
+    if (
+      this.state.isLoading ||
+      this.state.blogItems.length === this.state.totalCount
+    ) {
+      return;
     }
+
+    if (
+      window.innerHeight + document.documentElement.scrollTop  <
+      document.documentElement.offsetHeight
+    ) {
+      this.getBlogItems();
+    }
+  }
 
   getBlogItems() {
     this.setState({
