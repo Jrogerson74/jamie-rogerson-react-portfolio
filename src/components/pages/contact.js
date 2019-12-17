@@ -33,7 +33,7 @@ export default function() {
 
           <div className="bullet-point-group">
             <div className="icon">
-              <FontAwesomeIcon icon="map-marked-alt" />
+              <FontAwesomeIcon icon="map-marker-alt" />
             </div>
 
             <div className="text">Pleasant Grove, UT</div>
